@@ -1,0 +1,143 @@
+@media screen and (max-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav .hamburger.active :nth-child(2) {
+        opacity: 0;
+    }
+
+    nav .hamburger.active :nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    nav .hamburger.active :nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav .nav-menu {
+        position: fixed;
+        left: -200%;
+        top: 10vh;
+        gap: 0;
+        flex-direction: column;
+         background-color: #333;
+        text-align: center;
+        transition: 0.6s;
+        width: 100vw;
+        border-bottom: #e64800 solid 3px;
+    }
+
+    nav .nav-item {
+        margin: 16px 0;
+    }
+
+    nav .nav-menu.active {
+        left: 0;
+    }
+}
+
+/* hero section */
+
+@media (max-width: 768px) {
+    .car-card {
+      width: 100%;
+    }
+  
+    .car-photos {
+      justify-content: center;
+    }
+  }
+
+
+/* about us  */
+@media (max-width: 768px) {
+    .about-image {
+      max-width: 100%;
+    }
+  }
+
+
+  /* car page */
+  @media (max-width: 768px) {
+    .car-item {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+
+  /* booking form */
+  @media (max-width: 768px) {
+    .car {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    form {
+      max-width: 100%;
+    }
+  }
+ 
+
+  /* contact */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+      margin-bottom: 15px;
+    }
+    
+    #contact-form button {
+      padding: 8px 16px;
+    }
+  }
+ 
+
+  /* footer */
+  @media screen and (max-width: 625px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
